@@ -11,17 +11,17 @@ export default function Home() {
         {/* HERO */}
         <Card className="shadow-md">
           <CardHeader className="space-y-2">
-            <Badge className="w-fit">Opositora a Bombera</Badge>
+            <Badge className="w-fit">
+              Opositora a Bombera de la Generalitat
+            </Badge>
             <CardTitle className="text-3xl font-extrabold text-red-700/50">
               Presentació
             </CardTitle>
             <p className="text-zinc-700">
-              Si ets dona i vols millorar les teves físiques de bombera aquí
-              podreu seguir els entrenaments específics que vaig seguir per la
-              preparació de la prova física a Bombers de la Generalitat:
-              explicació detallada de cada prova (tal com està a les bases),
-              entrenaments específics per millorar cada prova i diferents tipus
-              d'horari d'entrenament per evitar la fatiga.
+              Plataforma amb accés a informació contrastada sobre les proves
+              físiques de l’oposició a Bombers de la Generalitat, amb programes
+              d’entrenament específics per optimitzar el rendiment en cada
+              prova.
             </p>
           </CardHeader>
           <CardContent className="flex gap-3">
@@ -113,20 +113,19 @@ export default function Home() {
         </Card>
         {/* HORARI D'ENTRENAMENT */}
         <section className="rounded-2xl bg-white shadow p-6">
-          <div className="flex gap-6">
+          <div className="flex gap-6 justify-between">
             <div>
               <h2 className="text-xl font-semibold">
                 Horari d’entrenament setmanal
               </h2>
-              <p className="text-zinc-700 mb-4">
-                Planificació base perquè coincidiu entre setmana. Pots
-                adaptar-la segons energia i disponibilitat.
+              <p className="text-zinc-700 text-sm mb-4">
+                Pots adaptar-lo segons energia i disponibilitat.
               </p>
             </div>
 
             {/* Botó amb popup */}
             <div className="relative group mt-4 inline-block">
-              <button className="rounded-md bg-orange-500 px-3 py-1.5 text-white font-medium hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500">
+              <button className="rounded-md bg-red-500 px-3 py-1.5 text-white font-medium hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-orange-500">
                 Aclaracions
               </button>
               <div className="absolute right-0 mt-2 w-80 rounded-xl border bg-white p-4 text-sm shadow-lg z-20 hidden group-hover:block group-focus-within:block">
@@ -186,15 +185,15 @@ export default function Home() {
               <tbody>
                 <tr>
                   <td className="p-3 border font-medium">Dilluns</td>
-                  <td className="p-3 border">🏃‍♀️ CN</td>
-                  <td className="p-3 border">🏊 Natació · ⚡ Circuit*</td>
+                  <td className="p-3 border">🏃‍♀️ CN · 🏊 Natació</td>
+                  <td className="p-3 border">⚡ Circuit*</td>
                 </tr>
                 <tr className="bg-zinc-50">
                   <td className="p-3 border font-medium">Dimarts</td>
-                  <td className="p-3 border">🧲 Dummy</td>
                   <td className="p-3 border">
-                    💪 Força V · ⚡ Circuit · 🏋️ Gym*
+                    🧲 Dummy · 💪 Força V · ⚡ Circuit
                   </td>
+                  <td className="p-3 border">🏋️ Gym*</td>
                 </tr>
                 <tr>
                   <td className="p-3 border font-medium">Dimecres</td>
@@ -203,23 +202,25 @@ export default function Home() {
                 </tr>
                 <tr className="bg-zinc-50">
                   <td className="p-3 border font-medium">Dijous</td>
-                  <td className="p-3 border">🧲 Dummy</td>
-                  <td className="p-3 border">🏋️ Gym+Press · ⚡ Circuit</td>
+                  <td className="p-3 border">
+                    🧲 Dummy · 🏋️ Gym+Press · ⚡ Circuit
+                  </td>
+                  <td className="p-3 border"></td>
                 </tr>
                 <tr>
                   <td className="p-3 border font-medium">Divendres</td>
-                  <td className="p-3 border">🏃‍♀️ CN</td>
-                  <td className="p-3 border">💪 Força D · ⚡ Circuit*</td>
+                  <td className="p-3 border">🏃‍♀️ CN · 💪 Força D</td>
+                  <td className="p-3 border">⚡ Circuit*</td>
                 </tr>
                 <tr className="bg-zinc-50">
                   <td className="p-3 border font-medium">Dissabte</td>
                   <td className="p-3 border">🏋️ Gym+Press</td>
-                  <td className="p-3 border">🏊 Natació · 🏋️ Gym*</td>
+                  <td className="p-3 border">🏊 Natació</td>
                 </tr>
                 <tr>
                   <td className="p-3 border font-medium">Diumenge</td>
                   <td className="p-3 border">☁️ Descans</td>
-                  <td className="p-3 border">—</td>
+                  <td className="p-3 border"></td>
                 </tr>
               </tbody>
             </table>
