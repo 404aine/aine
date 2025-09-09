@@ -150,29 +150,41 @@ export default function CircuitPage() {
 
       {/* 2. Cicles del circuit */}
       <section className="rounded-2xl bg-white shadow p-6 space-y-4">
-        <h2 className="text-xl font-semibold">2. Entrenament</h2>
+        <h2 className="text-xl font-semibold">2. Específic</h2>
         <Accordion
           items={[
             {
               title: "Cicle 1 · Salt trampolí i barra",
               content: (
-                <ul className="list-disc pl-5 text-sm text-zinc-800 space-y-1">
-                  <li>Salt al trampolí i barra: 5×10</li>
-                  <li>Caminar per la barra endavant i enrere</li>
-                </ul>
+                <>
+                  <ul className="list-disc pl-5 text-sm text-zinc-800 space-y-1">
+                    <li>Salt al trampolí i barra: 5×10</li>
+                    <li>Caminar per la barra endavant i enrere</li>
+                  </ul>
+                  <p className="bg-muted/50 mt-4 text-sm border-2 border-dashed p-2 rounded text-muted-foreground italic">
+                    Quan sigui “fàcil”, passa a Cicle 2
+                  </p>
+                </>
               ),
             },
             {
               title: "Cicle 2 · Barra avançada",
               content: (
-                <ul className="list-disc pl-5 text-sm text-zinc-800 space-y-1">
-                  <li>Caminar per la barra</li>
-                  <li>Seure i aixecar-se a la barra sense perdre equilibri</li>
-                </ul>
+                <>
+                  <ul className="list-disc pl-5 text-sm text-zinc-800 space-y-1">
+                    <li>Caminar per la barra</li>
+                    <li>
+                      Seure i aixecar-se a la barra sense perdre equilibri
+                    </li>
+                  </ul>
+                  <p className="bg-muted/50 mt-4 text-sm border-2 border-dashed p-2 rounded text-muted-foreground italic">
+                    Quan sigui “fàcil”, passa a Cicle 3
+                  </p>
+                </>
               ),
             },
             {
-              title: "Cicle 3 · Última part",
+              title: "Cicle 3 · Tanques",
               content: (
                 <ul className="list-disc pl-5 text-sm text-zinc-800 space-y-1">
                   <li>

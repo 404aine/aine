@@ -236,7 +236,7 @@ export default function BancaPage() {
 
   return (
     <main className="mx-auto max-w-3xl p-6 space-y-6">
-      <h1 className="text-2xl md:text-3xl font-extrabold">Press de banca</h1>
+      <h1 className="text-2xl md:text-3xl font-extrabold">Press de banca🏋️</h1>
       <p className="text-zinc-700">
         Barem 10 (dones): <b>42,5 kg</b>, <b>20 reps</b> en <b>45"</b>.
       </p>

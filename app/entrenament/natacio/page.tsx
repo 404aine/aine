@@ -41,7 +41,7 @@ export default function NatacioPage() {
 
   return (
     <main className="mx-auto max-w-3xl p-6 space-y-6">
-      <h1 className="text-2xl md:text-3xl font-extrabold">Natació</h1>
+      <h1 className="text-2xl md:text-3xl font-extrabold">Natació🏊 </h1>
 
       <section className="rounded-2xl bg-white shadow p-6 space-y-3">
         <p className="text-zinc-700">

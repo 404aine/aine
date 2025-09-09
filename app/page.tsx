@@ -46,19 +46,19 @@ export default function Home() {
             <CardTitle className="text-xl">Entrenament</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4 text-sm">
-            {/* Fila de Força sola */}
-            <div>
-              <Link
-                href="/entrenament/forca"
-                className="inline-block font-medium text-white bg-blue-400 px-4 py-2 rounded-md hover:bg-blue-500 transition"
-              >
-                Força
-              </Link>
-              <p className="text-zinc-700 mt-1">Sessió gym</p>
-            </div>
-
             {/* Fila amb la resta de proves */}
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-5">
+            <div className="grid grid-cols-3 gap-4 sm:grid-cols- md:grid-cols-5">
+              {/* Fila de Força sola */}
+              <div className="md:col-span-5">
+                <Link
+                  href="/entrenament/forca"
+                  className="inline-block font-medium text-white bg-blue-400 px-3 py-1.5 rounded-md hover:bg-blue-500 transition"
+                >
+                  Força
+                </Link>
+                <p className="text-zinc-700 mt-1">Sessió gym</p>
+              </div>
+
               <div>
                 <Link
                   href="/entrenament/banca"
@@ -86,7 +86,7 @@ export default function Home() {
                 >
                   Navette
                 </Link>
-                <p className="text-zinc-700 mt-1">≥ 13 periodes</p>
+                <p className="text-zinc-700 mt-1">≥ 13 períodes</p>
               </div>
 
               <div>
@@ -153,13 +153,11 @@ export default function Home() {
                     <span className="font-medium text-red-600">
                       ⚡ Circuit*:
                     </span>{" "}
-                    dies amb * = intensitat baixa, només 1 passada amb crono per
-                    polir errors.
+                    dies amb * = intensitat baixa (1 passada amb crono).
                   </li>
                   <li>
                     <span className="font-medium text-red-600">🏋️ Gym*:</span>{" "}
-                    opcional. Segons com et trobis pots afegir sessió de gimnàs
-                    o descansar.
+                    optatiu segons com et trobis.
                   </li>
                 </ul>
                 <p className="mt-3 text-xs text-zinc-600">
@@ -173,7 +171,56 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="overflow-x-auto">
+          {/* --- VISTA MÒBIL: TARGETES (sm:hidden) --- */}
+          <div className="grid gap-3 sm:hidden">
+            {/* Dilluns */}
+            <div className="rounded-xl border p-4">
+              <div className="font-semibold mb-1">Dilluns</div>
+              <div className="text-sm">🏃‍♀️ CN · 🏊 Natació</div>
+              <div className="text-sm text-zinc-700">⚡ Circuit*</div>
+            </div>
+            {/* Dimarts */}
+            <div className="rounded-xl border p-4 bg-zinc-50">
+              <div className="font-semibold mb-1">Dimarts</div>
+              <div className="text-sm">🧲 Dummy · 💪 Força V · ⚡ Circuit</div>
+              <div className="text-sm text-zinc-700">🏋️ Gym*</div>
+            </div>
+            {/* Dimecres */}
+            <div className="rounded-xl border p-4">
+              <div className="font-semibold mb-1">Dimecres</div>
+              <div className="text-sm">🏃‍♀️ CN</div>
+              <div className="text-sm text-zinc-700">⚡ Circuit* · 🏋️ Gym*</div>
+            </div>
+            {/* Dijous */}
+            <div className="rounded-xl border p-4 bg-zinc-50">
+              <div className="font-semibold mb-1">Dijous</div>
+              <div className="text-sm">
+                🧲 Dummy · 🏋️ Gym+Press · ⚡ Circuit
+              </div>
+              <div className="text-sm text-zinc-700">—</div>
+            </div>
+            {/* Divendres */}
+            <div className="rounded-xl border p-4">
+              <div className="font-semibold mb-1">Divendres</div>
+              <div className="text-sm">🏃‍♀️ CN · 💪 Força D</div>
+              <div className="text-sm text-zinc-700">⚡ Circuit*</div>
+            </div>
+            {/* Dissabte */}
+            <div className="rounded-xl border p-4 bg-zinc-50">
+              <div className="font-semibold mb-1">Dissabte</div>
+              <div className="text-sm">🏋️ Gym+Press</div>
+              <div className="text-sm text-zinc-700">🏊 Natació</div>
+            </div>
+            {/* Diumenge */}
+            <div className="rounded-xl border p-4">
+              <div className="font-semibold mb-1">Diumenge</div>
+              <div className="text-sm">☁️ Descans</div>
+              <div className="text-sm text-zinc-700">—</div>
+            </div>
+          </div>
+
+          {/* --- VISTA ESCRIPTORI: TAULA (oculta al mòbil) --- */}
+          <div className="overflow-x-auto hidden sm:block">
             <table className="w-full border-collapse text-sm">
               <thead>
                 <tr className="bg-red-100 text-left">
@@ -205,7 +252,7 @@ export default function Home() {
                   <td className="p-3 border">
                     🧲 Dummy · 🏋️ Gym+Press · ⚡ Circuit
                   </td>
-                  <td className="p-3 border"></td>
+                  <td className="p-3 border">—</td>
                 </tr>
                 <tr>
                   <td className="p-3 border font-medium">Divendres</td>
@@ -220,7 +267,7 @@ export default function Home() {
                 <tr>
                   <td className="p-3 border font-medium">Diumenge</td>
                   <td className="p-3 border">☁️ Descans</td>
-                  <td className="p-3 border"></td>
+                  <td className="p-3 border">—</td>
                 </tr>
               </tbody>
             </table>

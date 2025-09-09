@@ -38,87 +38,102 @@ export default function NavettePage() {
     {
       title: "Cicle 1",
       content: (
-        <div className="prose text-sm">
-          <p>
-            <strong>Activació:</strong>
+        <>
+          <div className="prose text-sm">
+            <p>
+              <strong>Activació:</strong>
+            </p>
+            <ul>
+              <li>Pas lateral 2×20m cada costat</li>
+              <li>Pes mort a una cama 2×6 cada cama</li>
+              <li>Skippings baixos 3×20m</li>
+              <li>4 passos + pivot 6× cada cama</li>
+            </ul>
+            <p>
+              <strong>Bloc principal (PER1 amb àudio):</strong>
+            </p>
+            <ul>
+              <li>5′ cursa contínua</li>
+              <li>3×60m progressius R1′ (acabant al 90%)</li>
+              <li>5× PER 7 R1′</li>
+              <li>RR 3–4′</li>
+              <li>4× PER 7</li>
+              <li>RR 3–4′</li>
+              <li>Al fallo PER 7</li>
+            </ul>
+          </div>
+          <p className="bg-muted/50 mt-4 text-sm border-2 border-dashed p-2 rounded text-muted-foreground italic">
+            Quan sigui “fàcil”, passa a Cicle 2
           </p>
-          <ul>
-            <li>Pas lateral 2×20m cada costat</li>
-            <li>Pes mort a una cama 2×6 cada cama</li>
-            <li>Skippings baixos 3×20m</li>
-            <li>4 passos + pivot 6× cada cama</li>
-          </ul>
-          <p>
-            <strong>Bloc principal (PER1 amb àudio):</strong>
-          </p>
-          <ul>
-            <li>5′ cursa contínua</li>
-            <li>3×60m progressius R1′ (acabant al 90%)</li>
-            <li>5× PER 7 R1′</li>
-            <li>RR 3–4′</li>
-            <li>4× PER 7</li>
-            <li>RR 3–4′</li>
-            <li>Al fallo PER 7</li>
-          </ul>
-        </div>
+        </>
       ),
     },
     {
       title: "Cicle 2",
       content: (
-        <div className="prose text-sm">
-          <p>
-            <strong>Activació:</strong>
+        <>
+          <div className="prose text-sm">
+            <p>
+              <strong>Activació:</strong>
+            </p>
+            <ul>
+              <li>Rotació de maluc externa 3 passos ×20m</li>
+              <li>Drill + arc de suport 2×6 cada cama</li>
+              <li>Drop squat 1 cama 2×5</li>
+              <li>Peu armat avançant 3×15m</li>
+            </ul>
+            <p>
+              <strong>Bloc principal (VAM):</strong>
+            </p>
+            <ul>
+              <li>8″ CC</li>
+              <li>3×60m progressius (acabant al 90%)</li>
+              <li>4×400m R1′30″</li>
+              <li>RR 3′</li>
+              <li>8×200m R45″</li>
+              <li>3′ CC molt suau</li>
+            </ul>
+            <p>
+              <em>Temps de referència VAM:</em>
+              400m ràpid 1:41 / lent 1:52 200m ràpid 0:49 / lent 0:57 CC ritme
+              ràpid 5:33/km, lent 6:43/km
+            </p>
+          </div>
+          <p className="bg-muted/50 mt-4 text-sm border-2 border-dashed p-2 rounded text-muted-foreground italic">
+            Quan sigui “fàcil”, passa a Cicle 3
           </p>
-          <ul>
-            <li>Rotació de maluc externa 3 passos ×20m</li>
-            <li>Drill + arc de suport 2×6 cada cama</li>
-            <li>Drop squat 1 cama 2×5</li>
-            <li>Peu armat avançant 3×15m</li>
-          </ul>
-          <p>
-            <strong>Bloc principal (VAM):</strong>
-          </p>
-          <ul>
-            <li>8″ CC</li>
-            <li>3×60m progressius (acabant al 90%)</li>
-            <li>4×400m R1′30″</li>
-            <li>RR 3′</li>
-            <li>8×200m R45″</li>
-            <li>3′ CC molt suau</li>
-          </ul>
-          <p>
-            <em>Temps de referència VAM:</em>
-            400m ràpid 1:41 / lent 1:52 200m ràpid 0:49 / lent 0:57 CC ritme
-            ràpid 5:33/km, lent 6:43/km
-          </p>
-        </div>
+        </>
       ),
     },
     {
       title: "Cicle 3",
       content: (
-        <div className="prose text-sm">
-          <p>
-            <strong>Activació:</strong>
+        <>
+          <div className="prose text-sm">
+            <p>
+              <strong>Activació:</strong>
+            </p>
+            <ul>
+              <li>Planxa comandament 3×8</li>
+              <li>Pes mort a una cama 3×6 cada cama</li>
+              <li>Pont de glutis 3×10</li>
+            </ul>
+            <p>
+              <strong>Bloc principal (Força i mobilitat):</strong>
+            </p>
+            <ul>
+              <li>Excèntrica turmell 3×8 R45″</li>
+              <li>Drop squat a una cama 3×6 R30″</li>
+              <li>Salts endavant i enrere 2×6 cada cama R30″</li>
+              <li>Sentadeta goblet 3×10 R1′</li>
+              <li>Zancada davantera goblet 3×8 cada cama R30″</li>
+              <li>Zancada enrere goblet 2×8 cada cama R30″</li>
+            </ul>
+          </div>
+          <p className="bg-muted/50 mt-4 text-sm border-2 border-dashed p-2 rounded text-muted-foreground italic">
+            Quan sigui “fàcil”, passa a Cicle 4
           </p>
-          <ul>
-            <li>Planxa comandament 3×8</li>
-            <li>Pes mort a una cama 3×6 cada cama</li>
-            <li>Pont de glutis 3×10</li>
-          </ul>
-          <p>
-            <strong>Bloc principal (Força i mobilitat):</strong>
-          </p>
-          <ul>
-            <li>Excèntrica turmell 3×8 R45″</li>
-            <li>Drop squat a una cama 3×6 R30″</li>
-            <li>Salts endavant i enrere 2×6 cada cama R30″</li>
-            <li>Sentadeta goblet 3×10 R1′</li>
-            <li>Zancada davantera goblet 3×8 cada cama R30″</li>
-            <li>Zancada enrere goblet 2×8 cada cama R30″</li>
-          </ul>
-        </div>
+        </>
       ),
     },
     {
@@ -152,7 +167,7 @@ export default function NavettePage() {
 
   return (
     <main className="mx-auto max-w-3xl p-6 space-y-6">
-      <h1 className="text-2xl md:text-3xl font-extrabold">Cursa Navette</h1>
+      <h1 className="text-2xl md:text-3xl font-extrabold">Cursa Navette🏃‍♀️</h1>
       <p className="text-zinc-700">
         Barem 10 (dones): <b>≥ 13 períodes</b>
       </p>

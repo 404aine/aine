@@ -108,170 +108,190 @@ function Accordion({
 /* ---------- Contingut de les sessions ---------- */
 const sessions: { title: string; content: React.ReactNode }[] = [
   {
-    title: "Sessió 1 (40′) — Amb maniquí (Part 1)",
+    title: "Cicle 1 (40′)",
     content: (
-      <div className="prose text-sm text-zinc-800 space-y-4">
-        <div>
-          <h3 className="font-semibold">Activació (13′)</h3>
-          <ul className="list-disc pl-5">
-            <li>Transicions 90/90 amb suport — 2×10 (5 per costat) · R30″</li>
-            <li>Press Pallof — 4×10 (2 per costat) · R30″</li>
-            <li>Halo amb mancuerna/KB — 3×3 voltes · R20″</li>
-            <li>Planxa RKC — 4×10″ · R30″</li>
-          </ul>
+      <>
+        <div className="prose text-sm text-zinc-800 space-y-4">
+          <div>
+            <h3 className="font-semibold">Activació (13′)</h3>
+            <ul className="list-disc pl-5">
+              <li>Transicions 90/90 amb suport — 2×10 (5 per costat) · R30″</li>
+              <li>Press Pallof — 4×10 (2 per costat) · R30″</li>
+              <li>Halo amb mancuerna/KB — 3×3 voltes · R20″</li>
+              <li>Planxa RKC — 4×10″ · R30″</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold">Força (17′)</h3>
+            <ul className="list-disc pl-5">
+              <li>
+                Goblet mantingut — Mig: 4×20″ @20 kg · R30″ · Mig/alt: 4×30″ @24
+                kg · R30″ · Alt: 5×30″ @24 kg · R30″
+              </li>
+              <li>
+                Sentadilla goblet amb banda enrere — Mig: 2×10 @16 kg · R1′ ·
+                Mig/alt: 3×10 @20 kg · R1′ · Alt: 3×12 @24 kg · R1′
+              </li>
+              <li>
+                Sentadilla en politja baixa (o goma) — Mig: 3×10 · R1′ ·
+                Mig/alt: 4×10 · R1′ · Alt: 4×12 · R1′
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold">Maniquí (10′)</h3>
+            <ul className="list-disc pl-5">
+              <li>
+                Sèries de 10 m (~70 kg): Mig 5 · R1′30″ · Mig/alt 6 · R1′30″ ·
+                Alt 6 · R1′
+              </li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h3 className="font-semibold">Força (17′)</h3>
-          <ul className="list-disc pl-5">
-            <li>
-              Goblet mantingut — Mig: 4×20″ @20 kg · R30″ · Mig/alt: 4×30″ @24
-              kg · R30″ · Alt: 5×30″ @24 kg · R30″
-            </li>
-            <li>
-              Sentadilla goblet amb banda enrere — Mig: 2×10 @16 kg · R1′ ·
-              Mig/alt: 3×10 @20 kg · R1′ · Alt: 3×12 @24 kg · R1′
-            </li>
-            <li>
-              Sentadilla en politja baixa (o goma) — Mig: 3×10 · R1′ · Mig/alt:
-              4×10 · R1′ · Alt: 4×12 · R1′
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="font-semibold">Maniquí (10′)</h3>
-          <ul className="list-disc pl-5">
-            <li>
-              Sèries de 10 m (~70 kg): Mig 5 · R1′30″ · Mig/alt 6 · R1′30″ · Alt
-              6 · R1′
-            </li>
-          </ul>
-        </div>
-      </div>
+        <p className="bg-muted/50 mt-4 text-sm border-2 border-dashed p-2 rounded text-muted-foreground italic">
+          Quan sigui “fàcil”, passa a Cicle 2
+        </p>
+      </>
     ),
   },
   {
-    title: "Sessió 3 (39′) — Amb maniquí (Part 2)",
+    title: "Cicle 2 (39′)",
     content: (
-      <div className="prose text-sm text-zinc-800 space-y-4">
-        <div>
-          <h3 className="font-semibold">Activació (13′)</h3>
-          <ul className="list-disc pl-5">
-            <li>Transicions 90/90 amb suport — 2×10 (5 per costat) · R30″</li>
-            <li>Press Pallof front-arriba — 4×6 (2 per costat) · R30″</li>
-            <li>Halo amb KB — 4×3 voltes · R20″</li>
-            <li>Planxa RKC — 4×10″ · R30″</li>
-          </ul>
+      <>
+        <div className="prose text-sm text-zinc-800 space-y-4">
+          <div>
+            <h3 className="font-semibold">Activació (13′)</h3>
+            <ul className="list-disc pl-5">
+              <li>Transicions 90/90 amb suport — 2×10 (5 per costat) · R30″</li>
+              <li>Press Pallof front-arriba — 4×6 (2 per costat) · R30″</li>
+              <li>Halo amb KB — 4×3 voltes · R20″</li>
+              <li>Planxa RKC — 4×10″ · R30″</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold">Força (14′)</h3>
+            <ul className="list-disc pl-5">
+              <li>
+                Goblet mantingut — Mig: 2×30″ @20 kg · R30″ · Mig/alt: 3×30″ @24
+                kg · R30″ · Alt: 3×45″ @24 kg · R30″
+              </li>
+              <li>
+                Sentadilla goblet amb banda enrere — Mig: 2×10 @16 kg · R1′ ·
+                Mig/alt: 3×10 @20 kg · R1′ · Alt: 3×12 @24 kg · R1′
+              </li>
+              <li>
+                Sentadilla en politja baixa (o goma) — Mig: 2×12 · R1′ ·
+                Mig/alt: 3×12 · R1′ · Alt: 3×15 · R1′
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold">Maniquí (12′)</h3>
+            <ul className="list-disc pl-5">
+              <li>15 m: Mig 3 · R1′30″ · Mig/alt 4 · R1′30″ · Alt 4 · R1′</li>
+              <li>Descansa 3′</li>
+              <li>10 m: Mig 2 · R1′ · Mig/alt 3 · R1′ · Alt 3 · R45″</li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h3 className="font-semibold">Força (14′)</h3>
-          <ul className="list-disc pl-5">
-            <li>
-              Goblet mantingut — Mig: 2×30″ @20 kg · R30″ · Mig/alt: 3×30″ @24
-              kg · R30″ · Alt: 3×45″ @24 kg · R30″
-            </li>
-            <li>
-              Sentadilla goblet amb banda enrere — Mig: 2×10 @16 kg · R1′ ·
-              Mig/alt: 3×10 @20 kg · R1′ · Alt: 3×12 @24 kg · R1′
-            </li>
-            <li>
-              Sentadilla en politja baixa (o goma) — Mig: 2×12 · R1′ · Mig/alt:
-              3×12 · R1′ · Alt: 3×15 · R1′
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="font-semibold">Maniquí (12′)</h3>
-          <ul className="list-disc pl-5">
-            <li>15 m: Mig 3 · R1′30″ · Mig/alt 4 · R1′30″ · Alt 4 · R1′</li>
-            <li>Descansa 3′</li>
-            <li>10 m: Mig 2 · R1′ · Mig/alt 3 · R1′ · Alt 3 · R45″</li>
-          </ul>
-        </div>
-      </div>
+        <p className="bg-muted/50 mt-4 text-sm border-2 border-dashed p-2 rounded text-muted-foreground italic">
+          Quan sigui “fàcil”, passa a Cicle 3
+        </p>
+      </>
     ),
   },
   {
-    title: "Sessió 5 (38′) — Amb maniquí (Part 3)",
+    title: "Cicle 3 (38′)",
     content: (
-      <div className="prose text-sm text-zinc-800 space-y-4">
-        <div>
-          <h3 className="font-semibold">Activació (11′)</h3>
-          <ul className="list-disc pl-5">
-            <li>Transicions 90/90 — 1×12 (6 per costat) · R30″</li>
-            <li>Press Pallof front-arriba — 2×8 (1 per costat) · R30″</li>
-            <li>Seq. Planxa RKC + lateral — 3×(10″+10″+10″+10″) · R1′</li>
-          </ul>
+      <>
+        <div className="prose text-sm text-zinc-800 space-y-4">
+          <div>
+            <h3 className="font-semibold">Activació (11′)</h3>
+            <ul className="list-disc pl-5">
+              <li>Transicions 90/90 — 1×12 (6 per costat) · R30″</li>
+              <li>Press Pallof front-arriba — 2×8 (1 per costat) · R30″</li>
+              <li>Seq. Planxa RKC + lateral — 3×(10″+10″+10″+10″) · R1′</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold">Força (14′)</h3>
+            <ul className="list-disc pl-5">
+              <li>
+                Isomètrica 1 cama goblet — Mig: 2×20″ @20 kg · Mig/alt: 2×30″
+                @24 kg · Alt: 2×45″ @24 kg · (R20″)
+              </li>
+              <li>
+                Sentadilla goblet amb banda enrere — Mig: 2×10 @16 kg · R1′ ·
+                Mig/alt: 3×10 @20 kg · R1′ · Alt: 3×12 @24 kg · R1′
+              </li>
+              <li>
+                Sentadilla en politja baixa — Mig: 2×12 · R1′ · Mig/alt: 3×12 ·
+                R1′ · Alt: 3×15 · R1′
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold">Maniquí (13′)</h3>
+            <ul className="list-disc pl-5">
+              <li>15 m: Mig 4 · R1′30″ · Mig/alt 5 · R1′30″ · Alt 5 · R1′</li>
+              <li>Descansa 2′</li>
+              <li>10 m: Mig 2 · R1′ · Mig/alt 3 · R1′ · Alt 3 · R45″</li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h3 className="font-semibold">Força (14′)</h3>
-          <ul className="list-disc pl-5">
-            <li>
-              Isomètrica 1 cama goblet — Mig: 2×20″ @20 kg · Mig/alt: 2×30″ @24
-              kg · Alt: 2×45″ @24 kg · (R20″)
-            </li>
-            <li>
-              Sentadilla goblet amb banda enrere — Mig: 2×10 @16 kg · R1′ ·
-              Mig/alt: 3×10 @20 kg · R1′ · Alt: 3×12 @24 kg · R1′
-            </li>
-            <li>
-              Sentadilla en politja baixa — Mig: 2×12 · R1′ · Mig/alt: 3×12 ·
-              R1′ · Alt: 3×15 · R1′
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="font-semibold">Maniquí (13′)</h3>
-          <ul className="list-disc pl-5">
-            <li>15 m: Mig 4 · R1′30″ · Mig/alt 5 · R1′30″ · Alt 5 · R1′</li>
-            <li>Descansa 2′</li>
-            <li>10 m: Mig 2 · R1′ · Mig/alt 3 · R1′ · Alt 3 · R45″</li>
-          </ul>
-        </div>
-      </div>
+        <p className="bg-muted/50 mt-4 text-sm border-2 border-dashed p-2 rounded text-muted-foreground italic">
+          Quan sigui “fàcil”, passa a Cicle 4
+        </p>
+      </>
     ),
   },
   {
-    title: "Sessió 7 (38′) — Amb maniquí (Part 4)",
+    title: "Cicle 4 (38′)",
     content: (
-      <div className="prose text-sm text-zinc-800 space-y-4">
-        <div>
-          <h3 className="font-semibold">Activació (10′)</h3>
-          <ul className="list-disc pl-5">
-            <li>Transicions 90/90 — 1×12 (6 per costat) · R30″</li>
-            <li>Press Pallof front-arriba — 2×8 (1 per costat) · R30″</li>
-            <li>Seq. Planxa RKC + lateral — 4×(10″+10″+10″+10″) · R1′</li>
-          </ul>
+      <>
+        <div className="prose text-sm text-zinc-800 space-y-4">
+          <div>
+            <h3 className="font-semibold">Activació (10′)</h3>
+            <ul className="list-disc pl-5">
+              <li>Transicions 90/90 — 1×12 (6 per costat) · R30″</li>
+              <li>Press Pallof front-arriba — 2×8 (1 per costat) · R30″</li>
+              <li>Seq. Planxa RKC + lateral — 4×(10″+10″+10″+10″) · R1′</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold">Força (12′)</h3>
+            <ul className="list-disc pl-5">
+              <li>
+                Isomètrica 1 cama goblet — Mig: 1×20″ @20 kg · Mig/alt: 1×30″
+                @24 kg · Alt: 1×45″ @24 kg · (R20″)
+              </li>
+              <li>
+                Sentadilla goblet amb banda enrere — Mig: 2×10 @16 kg · R1′ ·
+                Mig/alt: 3×10 @20 kg · R1′ · Alt: 3×12 @24 kg · R1′
+              </li>
+              <li>
+                Zancada posterior goblet — Mig: 2×6/cama @16 kg · R30″ ·
+                Mig/alt: 2×8/cama @20 kg · R30″ · Alt: 2×8/cama @24 kg · R30″
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold">Maniquí (15′)</h3>
+            <ul className="list-disc pl-5">
+              <li>20 m: Mig 3 · R1′30″ · Mig/alt 4 · R1′30″ · Alt 4 · R1′</li>
+              <li>Descansa 2′</li>
+              <li>10 m: Mig 4 · R45″ · Mig/alt 5 · R45″ · Alt 5 · R30″</li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h3 className="font-semibold">Força (12′)</h3>
-          <ul className="list-disc pl-5">
-            <li>
-              Isomètrica 1 cama goblet — Mig: 1×20″ @20 kg · Mig/alt: 1×30″ @24
-              kg · Alt: 1×45″ @24 kg · (R20″)
-            </li>
-            <li>
-              Sentadilla goblet amb banda enrere — Mig: 2×10 @16 kg · R1′ ·
-              Mig/alt: 3×10 @20 kg · R1′ · Alt: 3×12 @24 kg · R1′
-            </li>
-            <li>
-              Zancada posterior goblet — Mig: 2×6/cama @16 kg · R30″ · Mig/alt:
-              2×8/cama @20 kg · R30″ · Alt: 2×8/cama @24 kg · R30″
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="font-semibold">Maniquí (15′)</h3>
-          <ul className="list-disc pl-5">
-            <li>20 m: Mig 3 · R1′30″ · Mig/alt 4 · R1′30″ · Alt 4 · R1′</li>
-            <li>Descansa 2′</li>
-            <li>10 m: Mig 4 · R45″ · Mig/alt 5 · R45″ · Alt 5 · R30″</li>
-          </ul>
-        </div>
-      </div>
+        <p className="bg-muted/50 mt-4 text-sm border-2 border-dashed p-2 rounded text-muted-foreground italic">
+          Quan sigui “fàcil”, passa a Cicle 5
+        </p>
+      </>
     ),
   },
   {
-    title: "Sessió 9 (36′) — TEST amb maniquí",
+    title: "Cicle 5 (36′) SIMULACIÓ",
     content: (
       <div className="prose text-sm text-zinc-800 space-y-4">
         <div>
@@ -307,7 +327,7 @@ const sessions: { title: string; content: React.ReactNode }[] = [
     ),
   },
   {
-    title: "Sessió 11 (38′) — Amb maniquí (6)",
+    title: "CICLE 6 (38′)",
     content: (
       <div className="prose text-sm text-zinc-800 space-y-4">
         <div>
@@ -372,7 +392,7 @@ export default function DummyPage() {
   return (
     <main className="mx-auto max-w-3xl p-6 space-y-6">
       <h1 className="text-2xl md:text-3xl font-extrabold">
-        Arrossegament de maniquí
+        Arrossegament de maniquí🧲
       </h1>
       <p className="text-zinc-700">
         Barem 10 (dones): <b>{'< 30"'}</b>. Simula la prova cada 2 setmanes.
