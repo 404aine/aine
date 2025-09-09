@@ -1,103 +1,291 @@
-import Image from "next/image";
-
+// app/page.tsx
+// app/page.tsx
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="flex flex-col gap-8 min-h-screen items-center justify-center p-6">
+      <div className="mx-auto grid w-full max-w-3xl gap-6">
+        {/* HERO */}
+        <Card className="shadow-md">
+          <CardHeader className="space-y-2">
+            <Badge className="w-fit">Opositora a Bombera</Badge>
+            <CardTitle className="text-3xl font-extrabold text-red-700/50">
+              Presentació
+            </CardTitle>
+            <p className="text-zinc-700">
+              Si ets dona i vols millorar les teves físiques de bombera aquí
+              podreu seguir els entrenaments específics que vaig seguir per la
+              preparació de la prova física a Bombers de la Generalitat:
+              explicació detallada de cada prova (tal com està a les bases),
+              entrenaments específics per millorar cada prova i diferents tipus
+              d'horari d'entrenament per evitar la fatiga.
+            </p>
+          </CardHeader>
+          <CardContent className="flex gap-3">
+            <Button asChild className="bg-red-500">
+              <a href="mailto:ainegar555@gmail.com">Contacta’m</a>
+            </Button>
+            <Button variant="outline" asChild>
+              <a
+                href="https://github.com/404aine"
+                target="_blank"
+                rel="noreferrer"
+              >
+                El meu GitHub
+              </a>
+            </Button>
+          </CardContent>
+        </Card>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        {/* ENTRENAMENT FÍSIC */}
+        <Card className="shadow-md">
+          <CardHeader>
+            <CardTitle className="text-xl">Entrenament</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4 text-sm">
+            {/* Fila de Força sola */}
+            <div>
+              <Link
+                href="/entrenament/forca"
+                className="inline-block font-medium text-white bg-blue-400 px-4 py-2 rounded-md hover:bg-blue-500 transition"
+              >
+                Força
+              </Link>
+              <p className="text-zinc-700 mt-1">Sessió gym</p>
+            </div>
+
+            {/* Fila amb la resta de proves */}
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-5">
+              <div>
+                <Link
+                  href="/entrenament/banca"
+                  className="inline-block font-medium text-white bg-red-400 px-3 py-1.5 rounded-md hover:bg-red-500 transition"
+                >
+                  Banca
+                </Link>
+                <p className="text-zinc-700 mt-1">≥ 42,5kg</p>
+              </div>
+
+              <div>
+                <Link
+                  href="/entrenament/circuit"
+                  className="inline-block font-medium text-white bg-red-400 px-3 py-1.5 rounded-md hover:bg-red-500 transition"
+                >
+                  Circuit
+                </Link>
+                <p className="text-zinc-700 mt-1">≤ 17,33"</p>
+              </div>
+
+              <div>
+                <Link
+                  href="/entrenament/navette"
+                  className="inline-block font-medium text-white bg-red-400 px-3 py-1.5 rounded-md hover:bg-red-500 transition"
+                >
+                  Navette
+                </Link>
+                <p className="text-zinc-700 mt-1">≥ 13 periodes</p>
+              </div>
+
+              <div>
+                <Link
+                  href="/entrenament/dummy"
+                  className="inline-block font-medium text-white bg-red-400 px-3 py-1.5 rounded-md hover:bg-red-500 transition"
+                >
+                  Dummy
+                </Link>
+                <p className="text-zinc-700 mt-1">&lt; 30"</p>
+              </div>
+
+              <div>
+                <Link
+                  href="/entrenament/natacio"
+                  className="inline-block font-medium text-white bg-red-400 px-3 py-1.5 rounded-md hover:bg-red-500 transition"
+                >
+                  Natació
+                </Link>
+                <p className="text-zinc-700 mt-1">Apte o no apte</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+        {/* HORARI D'ENTRENAMENT */}
+        <section className="rounded-2xl bg-white shadow p-6">
+          <div className="flex gap-6">
+            <div>
+              <h2 className="text-xl font-semibold">
+                Horari d’entrenament setmanal
+              </h2>
+              <p className="text-zinc-700 mb-4">
+                Planificació base perquè coincidiu entre setmana. Pots
+                adaptar-la segons energia i disponibilitat.
+              </p>
+            </div>
+
+            {/* Botó amb popup */}
+            <div className="relative group mt-4 inline-block">
+              <button className="rounded-md bg-orange-500 px-3 py-1.5 text-white font-medium hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500">
+                Aclaracions
+              </button>
+              <div className="absolute right-0 mt-2 w-80 rounded-xl border bg-white p-4 text-sm shadow-lg z-20 hidden group-hover:block group-focus-within:block">
+                <h3 className="font-semibold mb-2">Com interpretar l’horari</h3>
+                <p className="text-zinc-700 mb-2">
+                  Els entrenaments inclouen Navette, Dummy, força general/press,
+                  natació i circuit.
+                </p>
+                <ul className="list-disc pl-5 space-y-1 text-zinc-700">
+                  <li>
+                    <span className="font-medium text-red-600">🏃‍♀️ CN:</span>{" "}
+                    entrenament de Cursa Navette.
+                  </li>
+                  <li>
+                    <span className="font-medium text-red-600">🧲 Dummy:</span>{" "}
+                    arrossegament de maniquí + força específica.
+                  </li>
+                  <li>
+                    <span className="font-medium text-red-600">
+                      💪 Força V / D:
+                    </span>{" "}
+                    força velocitat (Navette) i força Dummy.
+                  </li>
+                  <li>
+                    <span className="font-medium text-red-600">
+                      ⚡ Circuit*:
+                    </span>{" "}
+                    dies amb * = intensitat baixa, només 1 passada amb crono per
+                    polir errors.
+                  </li>
+                  <li>
+                    <span className="font-medium text-red-600">🏋️ Gym*:</span>{" "}
+                    opcional. Segons com et trobis pots afegir sessió de gimnàs
+                    o descansar.
+                  </li>
+                </ul>
+                <p className="mt-3 text-xs text-zinc-600">
+                  Objectiu: combinar qualitat, tècnica i recuperació.
+                </p>
+                <div
+                  className="absolute -top-2 left-6 h-3 w-3 rotate-45 bg-white border-l border-t"
+                  aria-hidden="true"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse text-sm">
+              <thead>
+                <tr className="bg-red-100 text-left">
+                  <th className="p-3 border">Dia</th>
+                  <th className="p-3 border">Proves principals</th>
+                  <th className="p-3 border">Complement / Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="p-3 border font-medium">Dilluns</td>
+                  <td className="p-3 border">🏃‍♀️ CN</td>
+                  <td className="p-3 border">🏊 Natació · ⚡ Circuit*</td>
+                </tr>
+                <tr className="bg-zinc-50">
+                  <td className="p-3 border font-medium">Dimarts</td>
+                  <td className="p-3 border">🧲 Dummy</td>
+                  <td className="p-3 border">
+                    💪 Força V · ⚡ Circuit · 🏋️ Gym*
+                  </td>
+                </tr>
+                <tr>
+                  <td className="p-3 border font-medium">Dimecres</td>
+                  <td className="p-3 border">🏃‍♀️ CN</td>
+                  <td className="p-3 border">⚡ Circuit* · 🏋️ Gym*</td>
+                </tr>
+                <tr className="bg-zinc-50">
+                  <td className="p-3 border font-medium">Dijous</td>
+                  <td className="p-3 border">🧲 Dummy</td>
+                  <td className="p-3 border">🏋️ Gym+Press · ⚡ Circuit</td>
+                </tr>
+                <tr>
+                  <td className="p-3 border font-medium">Divendres</td>
+                  <td className="p-3 border">🏃‍♀️ CN</td>
+                  <td className="p-3 border">💪 Força D · ⚡ Circuit*</td>
+                </tr>
+                <tr className="bg-zinc-50">
+                  <td className="p-3 border font-medium">Dissabte</td>
+                  <td className="p-3 border">🏋️ Gym+Press</td>
+                  <td className="p-3 border">🏊 Natació · 🏋️ Gym*</td>
+                </tr>
+                <tr>
+                  <td className="p-3 border font-medium">Diumenge</td>
+                  <td className="p-3 border">☁️ Descans</td>
+                  <td className="p-3 border">—</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        {/* CONSELLS DE PREPARACIÓ */}
+        <section className="rounded-2xl bg-white shadow p-6">
+          <h2 className="text-xl font-semibold mb-4">Consells de preparació</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+            {/* Consell 1 */}
+            <div className="border rounded-lg p-4 hover:shadow-md transition">
+              <h3 className="font-medium text-red-600 mb-2">
+                🏃‍♀️ Cursa Navette
+              </h3>
+              <p className="text-zinc-700">
+                Independentment del dia específic de Navette, fes carrera diària
+                d'una hora on corris 1' a sprint i descansiss 5'. Cada setmana
+                augmenta el temps del sprint. Això ajuda a hipertrofiar el cor i
+                augmentar la resistència pulmonar.
+              </p>
+            </div>
+
+            {/* Consell 2 */}
+            <div className="border rounded-lg p-4 hover:shadow-md transition">
+              <h3 className="font-medium text-red-600 mb-2">
+                💪 Press de banca
+              </h3>
+              <p className="text-zinc-700">
+                Entrena amb més pes que el que demana la prova, d'aquesta manera
+                familiaritzaràs molt ràpid el pes. Recorda fer bona tècnica:
+                peus esputjen al terra, retracció d'espatlles, cul fixe a la
+                banca i inclinació de la columna.
+              </p>
+            </div>
+
+            {/* Consell 3 */}
+            <div className="border rounded-lg p-4 hover:shadow-md transition">
+              <h3 className="font-medium text-red-600 mb-2">🧲 Dummy</h3>
+              <p className="text-zinc-700">
+                Treballa traccions pesades (deadlift, farmer walk) fes sèries
+                només d'anada amb lastre.
+              </p>
+            </div>
+
+            {/* Consell 4 */}
+            <div className="border rounded-lg p-4 hover:shadow-md transition">
+              <h3 className="font-medium text-red-600 mb-2">
+                ⚡ Circuit d’agilitat
+              </h3>
+              <p className="text-zinc-700">
+                El circuit es millora fent-lo. Però pots millorar l'equilibri,
+                la rapidesa als canvis de sentit i la potència fent pliomètrics.
+              </p>
+            </div>
+
+            {/* Consell 5 */}
+            <div className="border rounded-lg p-4 hover:shadow-md transition">
+              <h3 className="font-medium text-red-600 mb-2">🏊 Natació</h3>
+              <p className="text-zinc-700">
+                No es una prova difícil, simplement es recomanable nedar i estar
+                familiaritzat amb el recorregut de la piscina.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
   );
 }
